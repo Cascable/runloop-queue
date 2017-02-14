@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336CD1E5331AF00D5B55E /* AppDelegate.swift */; };
+		50E336D01E5331AF00D5B55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E336CF1E5331AF00D5B55E /* Assets.xcassets */; };
+		50E336D31E5331AF00D5B55E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E336D11E5331AF00D5B55E /* MainMenu.xib */; };
+		50E336DB1E5331C100D5B55E /* RunloopQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336DA1E5331C100D5B55E /* RunloopQueue.swift */; };
+		50E336E31E5352E800D5B55E /* RunloopQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336E21E5352E800D5B55E /* RunloopQueueTests.swift */; };
+		50E336EB1E535D8200D5B55E /* RunloopQueue+Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50E336E51E5352E800D5B55E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E336C21E5331AF00D5B55E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E336C91E5331AF00D5B55E;
+			remoteInfo = RunloopQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50E336CA1E5331AF00D5B55E /* RunloopQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunloopQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E336CD1E5331AF00D5B55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50E336CF1E5331AF00D5B55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50E336D21E5331AF00D5B55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		50E336D41E5331AF00D5B55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E336DA1E5331C100D5B55E /* RunloopQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunloopQueue.swift; sourceTree = "<group>"; };
+		50E336E01E5352E800D5B55E /* RunloopQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunloopQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E336E21E5352E800D5B55E /* RunloopQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunloopQueueTests.swift; sourceTree = "<group>"; };
+		50E336E41E5352E800D5B55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RunloopQueue+Streams.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50E336C71E5331AF00D5B55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E336DD1E5352E800D5B55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50E336C11E5331AF00D5B55E = {
+			isa = PBXGroup;
+			children = (
+				50E336CC1E5331AF00D5B55E /* RunloopQueue */,
+				50E336E11E5352E800D5B55E /* RunloopQueueTests */,
+				50E336CB1E5331AF00D5B55E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50E336CB1E5331AF00D5B55E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E336CA1E5331AF00D5B55E /* RunloopQueue.app */,
+				50E336E01E5352E800D5B55E /* RunloopQueueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E336CC1E5331AF00D5B55E /* RunloopQueue */ = {
+			isa = PBXGroup;
+			children = (
+				50E336CD1E5331AF00D5B55E /* AppDelegate.swift */,
+				50E336DA1E5331C100D5B55E /* RunloopQueue.swift */,
+				50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */,
+				50E336CF1E5331AF00D5B55E /* Assets.xcassets */,
+				50E336D11E5331AF00D5B55E /* MainMenu.xib */,
+				50E336D41E5331AF00D5B55E /* Info.plist */,
+			);
+			path = RunloopQueue;
+			sourceTree = "<group>";
+		};
+		50E336E11E5352E800D5B55E /* RunloopQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				50E336E21E5352E800D5B55E /* RunloopQueueTests.swift */,
+				50E336E41E5352E800D5B55E /* Info.plist */,
+			);
+			path = RunloopQueueTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50E336C91E5331AF00D5B55E /* RunloopQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E336D71E5331AF00D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueue" */;
+			buildPhases = (
+				50E336C61E5331AF00D5B55E /* Sources */,
+				50E336C71E5331AF00D5B55E /* Frameworks */,
+				50E336C81E5331AF00D5B55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunloopQueue;
+			productName = RunloopQueue;
+			productReference = 50E336CA1E5331AF00D5B55E /* RunloopQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50E336DF1E5352E800D5B55E /* RunloopQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E336E71E5352E800D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueueTests" */;
+			buildPhases = (
+				50E336DC1E5352E800D5B55E /* Sources */,
+				50E336DD1E5352E800D5B55E /* Frameworks */,
+				50E336DE1E5352E800D5B55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E336E61E5352E800D5B55E /* PBXTargetDependency */,
+			);
+			name = RunloopQueueTests;
+			productName = RunloopQueueTests;
+			productReference = 50E336E01E5352E800D5B55E /* RunloopQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50E336C21E5331AF00D5B55E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Cascable AB";
+				TargetAttributes = {
+					50E336C91E5331AF00D5B55E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					50E336DF1E5352E800D5B55E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50E336C91E5331AF00D5B55E;
+					};
+				};
+			};
+			buildConfigurationList = 50E336C51E5331AF00D5B55E /* Build configuration list for PBXProject "RunloopQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50E336C11E5331AF00D5B55E;
+			productRefGroup = 50E336CB1E5331AF00D5B55E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50E336C91E5331AF00D5B55E /* RunloopQueue */,
+				50E336DF1E5352E800D5B55E /* RunloopQueueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50E336C81E5331AF00D5B55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E336D01E5331AF00D5B55E /* Assets.xcassets in Resources */,
+				50E336D31E5331AF00D5B55E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E336DE1E5352E800D5B55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50E336C61E5331AF00D5B55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E336EB1E535D8200D5B55E /* RunloopQueue+Streams.swift in Sources */,
+				50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */,
+				50E336DB1E5331C100D5B55E /* RunloopQueue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E336DC1E5352E800D5B55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E336E31E5352E800D5B55E /* RunloopQueueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50E336E61E5352E800D5B55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E336C91E5331AF00D5B55E /* RunloopQueue */;
+			targetProxy = 50E336E51E5352E800D5B55E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50E336D11E5331AF00D5B55E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50E336D21E5331AF00D5B55E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50E336D51E5331AF00D5B55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50E336D61E5331AF00D5B55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		50E336D81E5331AF00D5B55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunloopQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		50E336D91E5331AF00D5B55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunloopQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		50E336E81E5352E800D5B55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunloopQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunloopQueue.app/Contents/MacOS/RunloopQueue";
+			};
+			name = Debug;
+		};
+		50E336E91E5352E800D5B55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RunloopQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunloopQueue.app/Contents/MacOS/RunloopQueue";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50E336C51E5331AF00D5B55E /* Build configuration list for PBXProject "RunloopQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E336D51E5331AF00D5B55E /* Debug */,
+				50E336D61E5331AF00D5B55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E336D71E5331AF00D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E336D81E5331AF00D5B55E /* Debug */,
+				50E336D91E5331AF00D5B55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50E336E71E5352E800D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E336E81E5352E800D5B55E /* Debug */,
+				50E336E91E5352E800D5B55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50E336C21E5331AF00D5B55E /* Project object */;
+}
