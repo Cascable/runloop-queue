@@ -6,7 +6,7 @@
 //  Copyright © 2017 Cascable AB. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 
 /// RunloopQueue is a serial queue based on CFRunLoop, running on the background thread.
 @objc(CBLRunloopQueue)
