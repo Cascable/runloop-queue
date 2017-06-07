@@ -38,7 +38,7 @@ public class RunloopQueue: NSObject {
     /// Execute a block of code in an asynchronous manner. Will return immediately.
     ///
     /// - Parameter block: The block of code to execute.
-    public func async(_ block: @escaping ((Void) -> (Void))) {
+    public func async(_ block: @escaping (() -> (Void))) {
         CFRunLoopPerformBlock(runloop, CFRunLoopMode.defaultMode.rawValue, block)
         thread.awake()
     }
@@ -49,7 +49,7 @@ public class RunloopQueue: NSObject {
     /// a block previously passed to `sync()` will deadlock.
     ///
     /// - Parameter block: The block of code to execute.
-    public func sync(_ block: @escaping ((Void) -> (Void))) {
+    public func sync(_ block: @escaping (() -> (Void))) {
 
         let conditionLock = NSConditionLock(condition: 0)
 
