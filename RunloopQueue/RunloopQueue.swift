@@ -46,10 +46,15 @@ public class RunloopQueue: NSObject {
     /// Execute a block of code in a synchronous manner. Will return when the code has executed.
     ///
     /// It's important to be careful with `sync()` to avoid deadlocks. In particular, calling `sync()` from inside
-    /// a block previously passed to `sync()` will deadlock.
+    /// a block previously passed to `sync()` will deadlock if the second call is made from a different thread.
     ///
     /// - Parameter block: The block of code to execute.
     public func sync(_ block: @escaping (() -> (Void))) {
+
+        if isRunningOnQueue() {
+            block()
+            return
+        }
 
         let conditionLock = NSConditionLock(condition: 0)
 
@@ -62,6 +67,13 @@ public class RunloopQueue: NSObject {
         thread.awake()
         conditionLock.lock(whenCondition: 1)
         conditionLock.unlock()
+    }
+
+    /// Query if the caller is running on this queue.
+    ///
+    /// - Returns: `true` if the caller is running on this queue, otherwise `false`.
+    public func isRunningOnQueue() -> Bool {
+        return CFRunLoopGetCurrent() == runloop
     }
 
     //MARK: - Code That Runs On The Background Thread

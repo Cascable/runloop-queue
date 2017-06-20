@@ -30,6 +30,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         }
 
+        queue.sync {
+            print("First sync in embedded")
+            self.queue.sync {
+                print("Second sync in embedded")
+            }
+        }
+
         print("Done")
         queue = nil
 
