@@ -18,7 +18,7 @@ public class RunloopQueue: NSObject {
     /// Init a new queue with the given name.
     ///
     /// - Parameter name: The name of the queue.
-    init(named name: String?) {
+    @objc(initWithName:) public init(named name: String?) {
         thread = RunloopQueueThread()
         thread.name = name
         super.init()
@@ -31,7 +31,7 @@ public class RunloopQueue: NSObject {
     }
 
     /// Returns `true` if the queue is running, otherwise `false`. Once stopped, a queue cannot be restarted.
-    var running: Bool {
+    public var running: Bool {
         get { return true }
     }
 
