@@ -73,7 +73,7 @@ public class RunloopQueue: NSObject {
     ///
     /// - Returns: `true` if the caller is running on this queue, otherwise `false`.
     public func isRunningOnQueue() -> Bool {
-        return CFRunLoopGetCurrent() == runloop
+        return CFEqual(CFRunLoopGetCurrent(), runloop)
     }
 
     //MARK: - Code That Runs On The Background Thread
