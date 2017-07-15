@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50485EBC1F1A4FFE00E2F8E1 /* RunloopQueue+URLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */; };
 		50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336CD1E5331AF00D5B55E /* AppDelegate.swift */; };
 		50E336D01E5331AF00D5B55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E336CF1E5331AF00D5B55E /* Assets.xcassets */; };
 		50E336D31E5331AF00D5B55E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E336D11E5331AF00D5B55E /* MainMenu.xib */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RunloopQueue+URLConnection.swift"; sourceTree = "<group>"; };
 		50E336CA1E5331AF00D5B55E /* RunloopQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunloopQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E336CD1E5331AF00D5B55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E336CF1E5331AF00D5B55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				50E336CD1E5331AF00D5B55E /* AppDelegate.swift */,
 				50E336DA1E5331C100D5B55E /* RunloopQueue.swift */,
 				50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */,
+				50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */,
 				50E336CF1E5331AF00D5B55E /* Assets.xcassets */,
 				50E336D11E5331AF00D5B55E /* MainMenu.xib */,
 				50E336D41E5331AF00D5B55E /* Info.plist */,
@@ -200,6 +203,7 @@
 			files = (
 				50E336EB1E535D8200D5B55E /* RunloopQueue+Streams.swift in Sources */,
 				50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */,
+				50485EBC1F1A4FFE00E2F8E1 /* RunloopQueue+URLConnection.swift in Sources */,
 				50E336DB1E5331C100D5B55E /* RunloopQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +403,7 @@
 				50E336D91E5331AF00D5B55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50E336E71E5352E800D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueueTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +412,7 @@
 				50E336E91E5352E800D5B55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
