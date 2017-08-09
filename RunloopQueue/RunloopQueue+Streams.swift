@@ -3,7 +3,7 @@
 //  RunloopQueue
 //
 //  Created by Daniel Kennett on 2017-02-14.
-//  Copyright © 2017 Cascable AB. All rights reserved.
+//  For license information, see LICENSE.md.
 //
 
 import Foundation

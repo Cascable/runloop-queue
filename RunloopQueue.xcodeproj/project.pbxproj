@@ -7,32 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50485EBC1F1A4FFE00E2F8E1 /* RunloopQueue+URLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */; };
-		50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336CD1E5331AF00D5B55E /* AppDelegate.swift */; };
-		50E336D01E5331AF00D5B55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E336CF1E5331AF00D5B55E /* Assets.xcassets */; };
-		50E336D31E5331AF00D5B55E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E336D11E5331AF00D5B55E /* MainMenu.xib */; };
-		50E336DB1E5331C100D5B55E /* RunloopQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336DA1E5331C100D5B55E /* RunloopQueue.swift */; };
+		500724A21F3B502B00011AAF /* RunloopQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336DA1E5331C100D5B55E /* RunloopQueue.swift */; };
+		500724A31F3B502E00011AAF /* RunloopQueue+URLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */; };
+		500724A41F3B503000011AAF /* RunloopQueue+Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */; };
 		50E336E31E5352E800D5B55E /* RunloopQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336E21E5352E800D5B55E /* RunloopQueueTests.swift */; };
-		50E336EB1E535D8200D5B55E /* RunloopQueue+Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		50E336E51E5352E800D5B55E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50E336C21E5331AF00D5B55E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50E336C91E5331AF00D5B55E;
-			remoteInfo = RunloopQueue;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		500724A61F3B576000011AAF /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		500724A71F3B576000011AAF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RunloopQueue+URLConnection.swift"; sourceTree = "<group>"; };
-		50E336CA1E5331AF00D5B55E /* RunloopQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunloopQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		50E336CD1E5331AF00D5B55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50E336CF1E5331AF00D5B55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50E336D21E5331AF00D5B55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		50E336D41E5331AF00D5B55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E336DA1E5331C100D5B55E /* RunloopQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunloopQueue.swift; sourceTree = "<group>"; };
 		50E336E01E5352E800D5B55E /* RunloopQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunloopQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E336E21E5352E800D5B55E /* RunloopQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunloopQueueTests.swift; sourceTree = "<group>"; };
@@ -41,13 +25,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50E336C71E5331AF00D5B55E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50E336DD1E5352E800D5B55E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +38,8 @@
 		50E336C11E5331AF00D5B55E = {
 			isa = PBXGroup;
 			children = (
+				500724A71F3B576000011AAF /* README.md */,
+				500724A61F3B576000011AAF /* LICENSE.md */,
 				50E336CC1E5331AF00D5B55E /* RunloopQueue */,
 				50E336E11E5352E800D5B55E /* RunloopQueueTests */,
 				50E336CB1E5331AF00D5B55E /* Products */,
@@ -70,7 +49,6 @@
 		50E336CB1E5331AF00D5B55E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50E336CA1E5331AF00D5B55E /* RunloopQueue.app */,
 				50E336E01E5352E800D5B55E /* RunloopQueueTests.xctest */,
 			);
 			name = Products;
@@ -79,13 +57,9 @@
 		50E336CC1E5331AF00D5B55E /* RunloopQueue */ = {
 			isa = PBXGroup;
 			children = (
-				50E336CD1E5331AF00D5B55E /* AppDelegate.swift */,
 				50E336DA1E5331C100D5B55E /* RunloopQueue.swift */,
 				50E336EA1E535D8200D5B55E /* RunloopQueue+Streams.swift */,
 				50485EBB1F1A4EE900E2F8E1 /* RunloopQueue+URLConnection.swift */,
-				50E336CF1E5331AF00D5B55E /* Assets.xcassets */,
-				50E336D11E5331AF00D5B55E /* MainMenu.xib */,
-				50E336D41E5331AF00D5B55E /* Info.plist */,
 			);
 			path = RunloopQueue;
 			sourceTree = "<group>";
@@ -102,23 +76,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50E336C91E5331AF00D5B55E /* RunloopQueue */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50E336D71E5331AF00D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueue" */;
-			buildPhases = (
-				50E336C61E5331AF00D5B55E /* Sources */,
-				50E336C71E5331AF00D5B55E /* Frameworks */,
-				50E336C81E5331AF00D5B55E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RunloopQueue;
-			productName = RunloopQueue;
-			productReference = 50E336CA1E5331AF00D5B55E /* RunloopQueue.app */;
-			productType = "com.apple.product-type.application";
-		};
 		50E336DF1E5352E800D5B55E /* RunloopQueueTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50E336E71E5352E800D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueueTests" */;
@@ -130,7 +87,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				50E336E61E5352E800D5B55E /* PBXTargetDependency */,
 			);
 			name = RunloopQueueTests;
 			productName = RunloopQueueTests;
@@ -147,14 +103,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cascable AB";
 				TargetAttributes = {
-					50E336C91E5331AF00D5B55E = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-					};
 					50E336DF1E5352E800D5B55E = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 50E336C91E5331AF00D5B55E;
 					};
 				};
 			};
@@ -171,22 +122,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50E336C91E5331AF00D5B55E /* RunloopQueue */,
 				50E336DF1E5352E800D5B55E /* RunloopQueueTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		50E336C81E5331AF00D5B55E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50E336D01E5331AF00D5B55E /* Assets.xcassets in Resources */,
-				50E336D31E5331AF00D5B55E /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50E336DE1E5352E800D5B55E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,45 +138,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		50E336C61E5331AF00D5B55E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50E336EB1E535D8200D5B55E /* RunloopQueue+Streams.swift in Sources */,
-				50E336CE1E5331AF00D5B55E /* AppDelegate.swift in Sources */,
-				50485EBC1F1A4FFE00E2F8E1 /* RunloopQueue+URLConnection.swift in Sources */,
-				50E336DB1E5331C100D5B55E /* RunloopQueue.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50E336DC1E5352E800D5B55E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500724A31F3B502E00011AAF /* RunloopQueue+URLConnection.swift in Sources */,
 				50E336E31E5352E800D5B55E /* RunloopQueueTests.swift in Sources */,
+				500724A21F3B502B00011AAF /* RunloopQueue.swift in Sources */,
+				500724A41F3B503000011AAF /* RunloopQueue+Streams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50E336E61E5352E800D5B55E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50E336C91E5331AF00D5B55E /* RunloopQueue */;
-			targetProxy = 50E336E51E5352E800D5B55E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		50E336D11E5331AF00D5B55E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50E336D21E5331AF00D5B55E /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		50E336D51E5331AF00D5B55E /* Debug */ = {
@@ -328,59 +242,27 @@
 			};
 			name = Release;
 		};
-		50E336D81E5331AF00D5B55E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RunloopQueue/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		50E336D91E5331AF00D5B55E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RunloopQueue/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		50E336E81E5352E800D5B55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RunloopQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunloopQueue.app/Contents/MacOS/RunloopQueue";
 			};
 			name = Debug;
 		};
 		50E336E91E5352E800D5B55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RunloopQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.cascable.RunloopQueueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunloopQueue.app/Contents/MacOS/RunloopQueue";
 			};
 			name = Release;
 		};
@@ -392,15 +274,6 @@
 			buildConfigurations = (
 				50E336D51E5331AF00D5B55E /* Debug */,
 				50E336D61E5331AF00D5B55E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50E336D71E5331AF00D5B55E /* Build configuration list for PBXNativeTarget "RunloopQueue" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50E336D81E5331AF00D5B55E /* Debug */,
-				50E336D91E5331AF00D5B55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
