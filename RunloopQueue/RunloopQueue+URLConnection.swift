@@ -16,7 +16,7 @@ public extension RunloopQueue {
     @objc(scheduleConnection:)
     public func schedule(_ connection: NSURLConnection) {
         sync {
-            connection.schedule(in: RunLoop.current, forMode: RunLoopMode.commonModes)
+            connection.schedule(in: RunLoop.current, forMode: RunLoop.Mode.common)
         }
     }
 
@@ -26,7 +26,7 @@ public extension RunloopQueue {
     @objc(unscheduleConnection:)
     public func unschedule(_ connection: NSURLConnection) {
         sync {
-            connection.unschedule(from: RunLoop.current, forMode: RunLoopMode.commonModes)
+            connection.unschedule(from: RunLoop.current, forMode: RunLoop.Mode.common)
         }
     }
 

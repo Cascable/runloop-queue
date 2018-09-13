@@ -31,14 +31,14 @@ public class RunloopQueue: NSObject {
     }
 
     /// Returns `true` if the queue is running, otherwise `false`. Once stopped, a queue cannot be restarted.
-    public var running: Bool {
+    @objc public var running: Bool {
         get { return true }
     }
 
     /// Execute a block of code in an asynchronous manner. Will return immediately.
     ///
     /// - Parameter block: The block of code to execute.
-    public func async(_ block: @escaping (() -> (Void))) {
+    @objc public func async(_ block: @escaping (() -> (Void))) {
         CFRunLoopPerformBlock(runloop, CFRunLoopMode.defaultMode.rawValue, block)
         thread.awake()
     }
@@ -49,7 +49,7 @@ public class RunloopQueue: NSObject {
     /// a block previously passed to `sync()` will deadlock if the second call is made from a different thread.
     ///
     /// - Parameter block: The block of code to execute.
-    public func sync(_ block: @escaping (() -> (Void))) {
+    @objc public func sync(_ block: @escaping (() -> (Void))) {
 
         if isRunningOnQueue() {
             block()
@@ -72,7 +72,7 @@ public class RunloopQueue: NSObject {
     /// Query if the caller is running on this queue.
     ///
     /// - Returns: `true` if the caller is running on this queue, otherwise `false`.
-    public func isRunningOnQueue() -> Bool {
+    @objc public func isRunningOnQueue() -> Bool {
         return CFEqual(CFRunLoopGetCurrent(), runloop)
     }
 
@@ -90,7 +90,7 @@ public class RunloopQueue: NSObject {
             conditionLock.lock()
             defer { conditionLock.unlock(withCondition: 1) }
 
-            guard let `self` = self else { return }
+            guard let self = self else { return }
             self.runloop = runloop
         }
 
