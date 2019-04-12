@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import RunloopQueue
 
 class RunloopQueueTests: XCTestCase {
 

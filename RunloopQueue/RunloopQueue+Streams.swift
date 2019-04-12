@@ -14,7 +14,7 @@ public extension RunloopQueue {
     ///
     /// - Parameter stream: The stream to schedule.
     @objc(scheduleStream:)
-    public func schedule(_ stream: Stream) {
+    func schedule(_ stream: Stream) {
         if let input = stream as? InputStream {
             sync { CFReadStreamScheduleWithRunLoop(input as CFReadStream, CFRunLoopGetCurrent(), .commonModes) }
         } else if let output = stream as? OutputStream {
@@ -26,7 +26,7 @@ public extension RunloopQueue {
     ///
     /// - Parameter stream: The stream to remove.
     @objc(unscheduleStream:)
-    public func unschedule(_ stream: Stream) {
+    func unschedule(_ stream: Stream) {
         if let input = stream as? InputStream {
             sync { CFReadStreamUnscheduleFromRunLoop(input as CFReadStream, CFRunLoopGetCurrent(), .commonModes) }
         } else if let output = stream as? OutputStream {
