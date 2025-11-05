@@ -18,8 +18,16 @@ public class RunloopQueue: NSObject {
     /// Init a new queue with the given name.
     ///
     /// - Parameter name: The name of the queue.
-    @objc(initWithName:) public init(named name: String?) {
-        thread = RunloopQueueThread()
+    @objc(initWithName:) public convenience init(named name: String?) {
+        self.init(named: name, priority: .userInitiated)
+    }
+
+    /// Init a new queue with the given name and priority.
+    ///
+    /// - Parameter name: The name of the queue.
+    /// - Parameter priority: The QoS priority for the queue.
+    @objc(initWithName:priority:) public init(named name: String?, priority: QualityOfService) {
+        thread = RunloopQueueThread(priority: priority)
         thread.name = name
         super.init()
         startRunloop()
@@ -105,9 +113,11 @@ private class RunloopQueueThread: Thread {
     private let runloopSource: CFRunLoopSource
     private var currentRunloop: CFRunLoop?
 
-    override init() {
+    init(priority: QualityOfService) {
         var sourceContext = CFRunLoopSourceContext()
         runloopSource = CFRunLoopSourceCreate(nil, 0, &sourceContext)
+        super.init()
+        qualityOfService = priority
     }
 
     /// The callback to be called once the runloop has started executing. Will be called on the runloop's own thread.
